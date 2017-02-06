@@ -57,6 +57,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    outline: none;
 }
 
 input[type=submit]:hover {
@@ -68,11 +69,20 @@ div {
 }
 
 ul#results {
-list-style-type: none;
-padding: 0;
-margin: 0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
 }
 
 ul#results li {
-background: url("img/pharm-logo.png") no-repeat left top;
+    background: url("img/pharm-logo.png") no-repeat left top;
 }
+
+
+
+/*@media screen and (max-width: 900px) {
+    ul#results li {
+        background: none;
+    }
+}
+
