@@ -76,12 +76,25 @@ ul#results {
 }
 
 ul#results li {
+    position: relative;
     background: url("img/pharm-logo.png") no-repeat left top;
     text-align: left;
     padding-left: 100px;
 }
 
-@media screen and (max-width: 900px) {
+input[type=button] {
+    position: absolute;
+    top:0;
+    right:0;
+    margin: 20px;
+    width: 50px;
+    color: white;
+    background: #4CAF50;
+
+}
+
+
+@media screen and (max-width: 920px) {
     ul#results li {
         background: url("img/pharm-logo-sm.png") no-repeat left top;
         padding-left: 50px;

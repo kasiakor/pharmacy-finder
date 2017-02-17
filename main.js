@@ -13,15 +13,30 @@ $(document).ready(function(){
 	        		*/
 
 		            $results.append("<li>" + data.result[i].name + "</br>" + data.result[i].address1 +", " 
-		            + data.result[i].address2 + "</br>" + data.result[i].city + "</br>"
+		            + data.result[i].address2 + "<input type='button' id='field' value='Find' />" + "</br>" + data.result[i].city + "</br>"
 		            + data.result[i].phone +"</li>"+ "</br>");
+
+
+			        $('#field').click(function() {
+				    window.location.href = 'google-maps.html';
+				    return false;
+					});
+
+		           
 	        	}
 	        	$( "li" ).addClass( "pharm-logo" );
+
+
+
+	        	
+
 
        		}
     	);
 
     });
+
+			    
 
 });
 
