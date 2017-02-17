@@ -12,13 +12,18 @@ $(document).ready(function(){
 	        		}
 	        		*/
 		            $results.append("<li>" + data.result[i].name + "</br>" + data.result[i].address1 +", " 
-		            + data.result[i].address2 + "<input type='button' value='Find' />" + "</br>" + data.result[i].city + "</br>"
+		            + data.result[i].address2 + 
+
+		            "<a href='http://maps.google.com/maps?&z=15&mrt=yp&t=k&q="+ data.result[i].latitude + "+" + data.result[i].longitude+"'>"
+		            + "<input type='button' value='Find' /></a>" 
+
+
+		            + "</br>" 
+
+		            + data.result[i].city + "</br>"
 		            + data.result[i].phone +"</li>"+ "</br>");
 
-		            $('input[type="button"').click(function() {
-				    window.location.href = 'google-maps.html';
-				    return false;
-					});
+		           
 	        	}
 	        	$( "li" ).addClass( "pharm-logo" );
        		}
