@@ -5,6 +5,7 @@ $(document).ready(function(){
     	var $userInput = document.getElementsByTagName("input")[0].value;
         $.getJSON("https://data.gov.uk/data/api/service/health/pharmacies/partial_postcode?partial_postcode=" +$userInput, 
 	        function(data){
+	        	$results.html("");
 	        	for (i=0; i <= data.result.length; i++) {
 
 	        		/*if( data.result[i].address2 === "") {
