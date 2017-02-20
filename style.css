@@ -81,6 +81,8 @@ ul#results li {
     text-align: left;
     padding-left: 70px;
     padding-right: 60px;
+    outline: none;
+    border: none;
 }
 
 input[type=button] {
@@ -104,11 +106,22 @@ input[type=button] {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 660px) {
     .form-area, .bg-image {
         width: 100%;
     }
 }
 
+@media screen and (min-width: 1024px) {
+    input[type=button] {
+        top: 0;
+        right: 20px;
+ 
+    }
+
+     ul#results li {
+        padding-right: 80px;
+     }
+}
 
 
