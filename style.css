@@ -80,6 +80,7 @@ ul#results li {
     background: url("img/pharm-logo.png") no-repeat left top;
     text-align: left;
     padding-left: 70px;
+    padding-right: 60px;
 }
 
 input[type=button] {
@@ -90,6 +91,7 @@ input[type=button] {
     width: 50px;
     color: white;
     background: #4CAF50;
+    cursor: pointer;
 
 }
 
